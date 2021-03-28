@@ -1,0 +1,144 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #C9D6FF 0%, #E2E2E2 100%);
+}
+
+
+
+.wrapper{
+ 
+    margin: 120px;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 5px 5px 28px -18px #d8d8d8;
+    position: relative;
+}
+
+.box{ 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 700px;
+    height: 700px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+
+.wrapper .inputField{
+    height: auto;
+    width: 100%
+    margin: 100px 0;
+}
+
+.inputField input{
+    width: 85%;
+    height: 45px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+    margin: 20px 0;
+    outline: none;
+}
+
+.wrapper .btn-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 300;
+    background: #C9D6FF;
+    padding-bottom: 3px;
+    cursor: pointer;
+
+}
+
+.inpt_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper .todoList{
+    max-height: 260px;
+    overflow: auto;
+}
+
+.todoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #EEEEEE;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li span{
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    background: #F5515D;
+    border-radius: 0 3px 3px 0; 
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.todoList li:hover span{
+    right: 0px;
+}
+
+.wrapper .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer button{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #C9D6FF;
+    padding-bottom: 3px;
+    cursor: pointer;
+    padding: 6px;
+
+}
